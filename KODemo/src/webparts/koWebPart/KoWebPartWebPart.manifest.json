@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "ad520c29-3c45-4b6d-96eb-0644f798f4e2",
+  "alias": "KoWebPartWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "ad520c29-3c45-4b6d-96eb-0644f798f4e2",
+    "group": { "default": "Under Development" },
+    "title": { "default": "KOWebPart" },
+    "description": { "default": "Web part built with KnockoutJS" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "KOWebPart"
+    }
+  }]
+}

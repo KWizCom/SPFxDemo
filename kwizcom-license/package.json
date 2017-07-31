@@ -1,0 +1,16 @@
+{
+  "name": "kwizcom-license",
+  "version": "1.0.3",
+  "description": "A package for checking and registring kwizcom product licenses",
+  "main": "license.js",
+  "typings": "license.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KWizCom <info@kwizcom.com> (http://www.kwizcom.com)",
+  "license": "SEE LICENSE IN license.md",
+  "dependencies": {
+    "@microsoft/sp-core-library": "~1.1.0",
+    "@microsoft/sp-webpart-base": "~1.1.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/koWebPart/KoWebPartWebPart.js",
+      "manifest": "./src/webparts/koWebPart/KoWebPartWebPart.manifest.json",
+      "outputPath": "./dist/ko-web-part.bundle.js"
+    }
+  ],
+  "externals": {},
+  "localizedResources": {
+    "koWebPartStrings": "webparts/koWebPart/loc/{locale}.js"
+  }
+}

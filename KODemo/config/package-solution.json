@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "ko-demo-client-side-solution",
+    "id": "8a229c60-db34-404a-9530-1352a84a67fd",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/ko-demo.sppkg"
+  }
+}

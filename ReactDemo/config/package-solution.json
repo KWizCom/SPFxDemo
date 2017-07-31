@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "react-demo-client-side-solution",
+    "id": "d2db5076-7529-47d1-afc4-f77a4f104d37",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/react-demo.sppkg"
+  }
+}

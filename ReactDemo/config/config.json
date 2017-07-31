@@ -1,0 +1,15 @@
+{
+  "entries": [
+    {
+      "entry": "./lib/webparts/reactWebPart/ReactWebPartWebPart.js",
+      "manifest": "./src/webparts/reactWebPart/ReactWebPartWebPart.manifest.json",
+      "outputPath": "./dist/react-web-part.bundle.js"
+    }
+  ],
+  "externals": {
+    "kwizcom-license": "https://kwizcom.sharepoint.com/sites/s/cdn/License.js"
+  },
+  "localizedResources": {
+    "reactWebPartStrings": "webparts/reactWebPart/loc/{locale}.js"
+  }
+}

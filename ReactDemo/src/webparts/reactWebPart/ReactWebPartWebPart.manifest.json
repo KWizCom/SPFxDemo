@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "e135a002-a36b-425e-93e7-3d9126dbe97f",
+  "alias": "ReactWebPartWebPart",
+  "componentType": "WebPart",
+  "version": "*", // The "*" signifies that the version should be taken from the package.json
+  "manifestVersion": 2,
+
+  /**
+   * This property should only be set to true if it is certain that the webpart does not
+   *  allow arbitrary scripts to be called
+   */
+  "safeWithCustomScriptDisabled": false,
+
+  "preconfiguredEntries": [{
+    "groupId": "e135a002-a36b-425e-93e7-3d9126dbe97f",
+    "group": { "default": "Under Development" },
+    "title": { "default": "React WebPart" },
+    "description": { "default": "WebPart built with ReactJS" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "React WebPart"
+    }
+  },
+  {
+    "groupId": "e135a002-a36b-425e-93e7-3d9126dbe97f",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Green React WebPart" },
+    "description": { "default": "WebPart built with ReactJS" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "React WebPart",
+      "color": "rgba(46,94,35,1)"
+    }
+  }]
+}

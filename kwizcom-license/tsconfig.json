@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "forceConsistentCasingInFileNames": true,
+    "module": "amd",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "types": [
+      "es6-promise",
+      "es6-collections"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
