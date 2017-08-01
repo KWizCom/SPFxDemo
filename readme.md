@@ -1,4 +1,6 @@
-Code demo key points:
+[Read more and comment on my blog...](https://kwizcom.blogspot.ca/2017/08/spfx-isv-insight-to-microsofts-latest.html)
+
+# Code demo key points:
 
 1. The demo has 4 projects:
 * KODemo
