@@ -24,6 +24,12 @@ It uses SharedCode directly from a relative path, bundled into the WebPart.
 It included kwizcom-license npm package, and bundles it as well.
 Cannot run on local workbench since it connects to Microsoft Graph API.
 
+Also, check out some build customizations in gulpfile.js
+I included 2 important fixes:
+- the fix for KnockOut templates that use containerless bindings, so that HTML comments are preserved
+- controlling the production bundle built file name, dropping the hash and replacing it with the version number
+Read more about it: http://kwizcom.blogspot.ca/2017/08/controlling-spfx-bundle-file-name-in.html
+
 # ReactDemo
 Contains an SPFx WebPart using React to render the UI.
 It uses SharedCode directly from a relative path, bundled into the WebPart.
