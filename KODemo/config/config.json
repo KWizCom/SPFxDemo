@@ -3,7 +3,7 @@
     {
       "entry": "./lib/webparts/koWebPart/KoWebPartWebPart.js",
       "manifest": "./src/webparts/koWebPart/KoWebPartWebPart.manifest.json",
-      "outputPath": "./dist/ko-web-part.bundle.js"
+      "outputPath": "./dist/ko-web-part.js"
     }
   ],
   "externals": {},

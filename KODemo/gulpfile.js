@@ -24,12 +24,12 @@ build.configureWebpack.mergeConfig({
             }
         });
 
-        //Change output file name, this does NOT apply to the production files built with gulp --ship in temp/deploy folder!
-        const existingOutputName = config.output.filename;
-        const outputNameExt = path.extname(existingOutputName);
-        const baseOutputName = path.basename(existingOutputName, outputNameExt);
-        config.output.filename = `${baseOutputName}.${packageJson.solution.version}${outputNameExt}`;
-        config.output.chunkFilename = '[id].' + config.output.filename;
+        // // //Change output file name, this does NOT apply to the production files built with gulp --ship in temp/deploy folder!
+        // // const existingOutputName = config.output.filename;
+        // // const outputNameExt = path.extname(existingOutputName);
+        // // const baseOutputName = path.basename(existingOutputName, outputNameExt);
+        // // config.output.filename = `${baseOutputName}.${packageJson.solution.version}${outputNameExt}`;
+        // // config.output.chunkFilename = '[id].' + config.output.filename;
 
         //Must return config back
         return config;
@@ -37,14 +37,14 @@ build.configureWebpack.mergeConfig({
 });
 
 
-//Add post build task. This still runs before bundle task
-let renameFilesProductionTask = build.subTask('rename-files-production', function(gulp, buildOptions, done) {
-    var production = (process.argv.indexOf('--ship') !== -1);
-    if(production)
-        this.log('Built in production!');
-    done();
-});
-build.rig.addPostBuildTask(renameFilesProductionTask);
+// // //Add post build task. This still runs before bundle task
+// // let renameFilesProductionTask = build.subTask('rename-files-production', function(gulp, buildOptions, done) {
+// //     var production = (process.argv.indexOf('--ship') !== -1);
+// //     if(production)
+// //         this.log('Built in production!');
+// //     done();
+// // });
+// // build.rig.addPostBuildTask(renameFilesProductionTask);
 
 //Hack-fix to get rid of hash in file names for production build temp/deploy folder:
 var original_renameWithHash = build.copyAssets._renameWithHash.bind(build.copyAssets);
