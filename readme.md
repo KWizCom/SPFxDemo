@@ -62,3 +62,7 @@ and use npm install and npm update to add it.
 This package published the output JS file to a CDN:
 https://kwizcom.sharepoint.com/SITES/S/CDN/License.js
 and can be loaded as an external (and not bundled)
+
+
+# Updates
+For updates and news, visit https://github.com/KWizCom/SPFxDemo/edit/master/Updates.md
