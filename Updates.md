@@ -10,3 +10,7 @@ Read more about it here: https://kwizcom.blogspot.ca/2017/10/removing-hash-from-
 Update: I can confirm the new version does allow you to drop the hash in the bundle JS file, but previous customization of the build that allowed me to append the version number now do not work.
 
 It seems impossible now to modify the file name in the bundle manually, and changing the file name in the config is the only way that works. Alas, it does not allow for "." in the bundle file name...
+
+
+## Update SPFx to 1.4.0
+Updating the react demo to run on 1.4.0 while the KO demo still runs on 1.1.0

@@ -1,15 +1,20 @@
 {
-  "entries": [
-    {
-      "entry": "./lib/webparts/reactWebPart/ReactWebPartWebPart.js",
-      "manifest": "./src/webparts/reactWebPart/ReactWebPartWebPart.manifest.json",
-      "outputPath": "./dist/react-web-part.bundle.js"
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "react-web-part-bundle": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reactWebPart/ReactWebPartWebPart.js",
+          "manifest": "./src/webparts/reactWebPart/ReactWebPartWebPart.manifest.json"
+        }
+      ]
     }
-  ],
-  "externals": {
-    "kwizcom-license": "https://kwizcom.sharepoint.com/sites/s/cdn/License.js"
   },
   "localizedResources": {
-    "reactWebPartStrings": "webparts/reactWebPart/loc/{locale}.js"
+    "reactWebPartStrings": "lib/webparts/reactWebPart/loc/{locale}.js"
+  },
+  "externals": {
+    "kwizcom-license": "https://kwizcom.sharepoint.com/sites/s/cdn/License.js"
   }
 }
