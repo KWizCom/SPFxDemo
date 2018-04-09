@@ -1,5 +1,7 @@
 define(["require", "exports", "@microsoft/sp-http"], function (require, exports, sp_http_1) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    //Note: When swtiching versions, on 1.1.0 use GraphClientResponse, on 1.4.0 use GraphHttpClientResponse
     var Utilities = (function () {
         function Utilities() {
         }
@@ -23,7 +25,6 @@ define(["require", "exports", "@microsoft/sp-http"], function (require, exports,
         };
         return Utilities;
     }());
-    Object.defineProperty(exports, "__esModule", { value: true });
     exports.default = Utilities;
 });
 //# sourceMappingURL=Utilities.js.map

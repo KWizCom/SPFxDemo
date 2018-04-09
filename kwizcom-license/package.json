@@ -1,6 +1,6 @@
 {
   "name": "kwizcom-license",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A package for checking and registring kwizcom product licenses",
   "main": "license.js",
   "typings": "license.d.ts",

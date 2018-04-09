@@ -13,10 +13,17 @@
 # Initial Setup
 1. run npm install on all root folders
 1. Go to "SharedCode" folder, run:
+when building kodemo
 ```
     npm install @microsoft/sp-core-library@~1.1.0
     npm install @microsoft/sp-webpart-base@~1.1.1
 ```
+when building reactdemo
+```
+    npm install @microsoft/sp-core-library@~1.4.0
+    npm install @microsoft/sp-webpart-base@~1.4.0
+```
+Note: delete node_modules when switching versions, before running npm install.
 
 # KODemo
 Contains an SPFx WebPart using Knockout to render the UI.

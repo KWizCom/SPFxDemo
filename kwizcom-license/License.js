@@ -1,5 +1,8 @@
+//Cannot use this type on 2 different versions of SPFx
+//import { IWebPartContext } from "@microsoft/sp-webpart-base";
 define(["require", "exports"], function (require, exports) {
     "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
     var License = (function () {
         function License() {
         }
@@ -12,7 +15,6 @@ define(["require", "exports"], function (require, exports) {
         };
         return License;
     }());
-    Object.defineProperty(exports, "__esModule", { value: true });
     exports.default = License;
 });
 //# sourceMappingURL=License.js.map
