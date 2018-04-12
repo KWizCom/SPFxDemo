@@ -1,7 +1,12 @@
 define(["require", "exports", "@microsoft/sp-http"], function (require, exports, sp_http_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
-    //Note: When swtiching versions, on 1.1.0 use GraphClientResponse, on 1.4.0 use GraphHttpClientResponse
+    /* Note: When swtiching versions
+     * v1.1.0 uses GraphClientResponse
+     * v1.4.0 uses GraphHttpClientResponse
+     * The class was renamed, breaking change
+     * To avoid code conflicts - we will use the base class HttpClientResponse instead
+     */
     var Utilities = (function () {
         function Utilities() {
         }
