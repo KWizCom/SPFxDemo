@@ -46,6 +46,11 @@ export default class ReactWebPartWebPart extends BaseClientSideWebPart<IReactWeb
     this.onPropertyPaneFieldChanged(propertyPath, oldValue, newValue);
     if (!this.disableReactivePropertyChanges)
       this.render();//update the webpart
+
+      //make sure updates re-render the properties panel
+      //this is important if you want your custom property changes
+      //to be able to show, hide, disable other properties.
+      this.context.propertyPane.refresh();
   }
 
   protected getPropertyPaneConfiguration(): IPropertyPaneConfiguration {

@@ -24,3 +24,13 @@ This makes sharing code beween projects a bit more complicated, and would perhap
 This definitly requires more research.
 The sharedcode, however, shows that I can reuse the code but will have to replace the npm packages to match the version used by my web part. See "readme.md" for more info, and comments in Utilities.ts regarding how to handle a breaking change.
 Alternativly, we could publish kwizcom-license in 2 different build versions, each with the correct dependencies on SPFx. Then set the dependency in each SPFx project to the right version. (1.0.0 built with SPFx 1.1.0 and 2.0.0 built with 1.4.0 for example)
+
+## React custom property re-render properties panel
+Added code:
+
+``
+       this.context.propertyPane.refresh();
+``
+
+This code makes SPFx re-build the entire properties panel, making it possible for you to add/remove controls based on changes in your custom property on the fly.
+For example: a custom property selecting an excel range type: "Named Table" or "Range" will be able to show a "enter range" text box only when "Range" was selected.
